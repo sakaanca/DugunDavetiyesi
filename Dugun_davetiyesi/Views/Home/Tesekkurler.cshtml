@@ -1,0 +1,35 @@
+﻿@model Dugun_davetiyesi.Models.Cevap
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Teşekkürler</title>
+   
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="text-center">
+    <div>
+        <h1 >Bilgilendirme için Teşekkürler @Model.Ad @Model.SoyAd</h1>
+        @if(Model.DuguneGelecekmi==true)
+        {
+            @: Düğüne katılımınız için teşekkür ederiz , görüşmek üzere ... SEVGİYLE KALIN :)
+        }
+        else
+        {
+            @: Katılım sağlayamadığınız için çok üzgünüm , tekrarının olmayacağını hatırlatarak seni tekrar düşünmeye teşvik ediyorum.
+        }
+
+    </div>
+    Katılanları görmek için lütfen <a asp-action="CevaplariListele">buraya</a> tıklayınız.
+
+    <br />
+    <br />
+    Yeni katılımcı eklemek için
+    <a asp-action="CevapFormu">tıklayınız</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿.field-validation-error{ /*Hatalı bir değer girildiğininde hatanın kırmızı renkli olmasını söyler*/
+    color: #ff0000;
+
+}
+.field-validation-valid{ /*Hata olmayan durumda gizlenmesi gereken doğrulama mesajı sitilini belirler */
+    display:none;
+}
+.input-validation-error{/* Giriş alanlarının (input fields) doğrulama hatası olduğunda çevresinde kırmıı bir kenarlık ve hata mesajı için arka plan rengi belirler*/
+    border: 2px solid #ff0000;
+    background-color: #fee;
+}
+.validation-summary-errors{/* Hata mesajının koyu kırmızı ve kalın olmasını sağlar*/
+    font-weight: bold;
+    color: #f00;
+
+}
+.validation-summary-valid{
+    display:none;
+}
